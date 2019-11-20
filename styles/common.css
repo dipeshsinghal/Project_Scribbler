@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-class {
+    font-family: 'Montez', cursive;
+    color: blue;
+}
+
+.sub-header-class {
+    font-family: 'Ubuntu Mono', monospace;
+    color: black;
+}
+.button-class {    
+    background-color: blue;
+    margin: 5px;
+}
