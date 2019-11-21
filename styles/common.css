@@ -1,19 +1,30 @@
-.container {
+.header1-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 5px;
+    max-width: 100%;
 }
 
-.header-class {
+.header1-logo-col{
+    align-items: left;
+}
+
+.header1-button-col{
+    align-items: right;
+}
+
+.header1-text {
     font-family: 'Montez', cursive;
     color: blue;
 }
 
-.sub-header-class {
+.header1-subtext {
     font-family: 'Ubuntu Mono', monospace;
     color: black;
 }
-.button-class {    
+
+.header1-button {    
     background-color: blue;
     margin: 5px;
 }
@@ -23,4 +34,4 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-  }
+}
