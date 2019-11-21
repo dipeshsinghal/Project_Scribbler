@@ -24,9 +24,37 @@
     color: black;
 }
 
-.header1-button {    
+.header1-button {   
+    text-align: center;
     background-color: blue;
     margin: 5px;
+    border: 2px outset gainsboro ;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.post-button-div {
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18%;
+    margin-bottom: auto;
+    display:block;
+}
+
+.post-button {
+    text-align: center;
+    color: black;
+    background-color: rgb(207, 179, 53);
+    margin: 5px;
+    border: 2px outset gainsboro ;
 }
 
 body {
