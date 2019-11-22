@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
 
@@ -33,43 +34,43 @@
 
 <!-- Sign Up form Modal Start -->
     <div id="id01" class="modal">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</span>
       <form class="modal-content" action="">
         <div class="container">
-          <h1>Get Started</h1>
-          <hr>
-          <label for="name"><b>Name</b></label>
-          <input type="text" placeholder="Enter your name" name="name" required>
+          <div class="modal-title">Get Started</div>
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" ><i class="fa fa-times modal-close" aria-hidden="true"></i></span>
+          <hr class="hr-class">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" name="name" required >
 
-          <label for="username"><b>Username</b></label>
+          <label for="username">Username</label>
           <input type="text" placeholder="Enter your username" name="username" required>
 
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter your password" name="psw" required>
+          <label for="password">Password</label>
+          <input type="password" placeholder="Enter your password" name="password" required>
 
-          <label for="psw-repeat"><b>Confirm Password</b></label>
-          <input type="password" placeholder="Re-enter your password" name="psw-repeat" required>
+          <label for="password-repeat">Confirm Password</label>
+          <input type="password" placeholder="Re-enter your password" name="password-repeat" required>
 
           <div class="clearfix">
-            <button type="submit" class="signup">Sign Up</button>
+            <button id="id_signin_btn" type="submit" class="class-signin-btn">Sign Up</button>
           </div>
         </div>  
-      </form>
+      </form> 
     </div>
 <!-- Sign Up form Modal End --> 
 
 <!-- Sign In form Modal Start -->
 <div id="id02" class="modal">
-  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">Close</span>
   <form class="modal-content" action="">
-    <div class="container">
-      <h1>Welcome Back!</h1>
-      <hr>
+    <div id="id-modal-container" class="container">
+      <div class="modal-title">Welcome Back!</div>
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" ><i class="fa fa-times modal-close" aria-hidden="true"></i></span>
+      <hr class="hr-class">
       <label for="username"><b>Username</b></label>
       <input type="text" placeholder="Enter your username" name="username" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter your password" name="psw" required>
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter your password" name="password" required>
 
       <div class="clearfix">
         <button type="submit" class="signup">Sign In</button>

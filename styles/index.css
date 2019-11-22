@@ -1,18 +1,25 @@
 * {box-sizing: border-box}
 /* Full-width input fields */
   input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+    width: 100%;
+    box-sizing: 25px;
+    height: 40px;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.hr-class {
+    border: 1px solid #6c757d;
+    margin-bottom: 5px;
 }
 
 /* Add a background color when the inputs get focus */
 input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
-  outline: none;
+  outline: auto blue    ;
 }
 
 
@@ -23,16 +30,16 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
-  padding-top: 50px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 0;
+    background-color: #000000bf;
 }
 
 /* Modal Content/Box */
@@ -40,14 +47,49 @@ input[type=text]:focus, input[type=password]:focus {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 25%; /* Could be more or less, depending on screen size */
+  height: auto;
 }
 
 /* Style the horizontal ruler */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+.hr-class {
+    border: 1px solid gray;
+    margin-bottom: 25px;
+    margin: 5px 0 5px 0;
 }
+.modal-title{
+    font-weight: normal;
+    font-size: x-large;
+    color: #6c757d;
+    display: inline-block;
+    width: 95%;
+}
+
+.modal-close {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+    
+
+label {    
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.class-signin-btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: auto auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    height: 35px;
+  }
 
 /* The Close Button (x) */
 .close {
