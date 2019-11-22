@@ -32,7 +32,7 @@
         </div>
     </div>
 
-<!-- Sign Up form Modal Start -->
+<!-- SignUp form Modal Start -->
     <div id="id01" class="modal">
       <form class="modal-content" action="">
         <div class="container">
@@ -52,34 +52,41 @@
           <input type="password" placeholder="Re-enter your password" name="password-repeat" required>
 
           <div class="clearfix">
-            <button id="id_signin_btn" type="submit" class="class-signin-btn">Sign Up</button>
+            <button id="id_signup_btn" type="submit" class="class-signin-btn">Sign Up</button>
           </div>
         </div>  
       </form> 
     </div>
-<!-- Sign Up form Modal End --> 
+<!-- SignUp form Modal End --> 
 
-<!-- Sign In form Modal Start -->
+<!-- SignIn form Modal Start -->
 <div id="id02" class="modal">
   <form class="modal-content" action="">
-    <div id="id-modal-container" class="container">
+    <div class="container">
       <div class="modal-title">Welcome Back!</div>
       <span onclick="document.getElementById('id02').style.display='none'" class="close" ><i class="fa fa-times modal-close" aria-hidden="true"></i></span>
       <hr class="hr-class">
-      <label for="username"><b>Username</b></label>
+      <label for="username">Username</label>
       <input type="text" placeholder="Enter your username" name="username" required>
 
-      <label for="password"><b>Password</b></label>
+      <label for="password">Password</label>
       <input type="password" placeholder="Enter your password" name="password" required>
 
       <div class="clearfix">
-        <button type="submit" class="signup">Sign In</button>
+        <button id="id_signin_btn" type="submit" class="class-signin-btn">Sign In</button>
       </div>
-      <p>Not a member?<p> <span onclick="document.getElementById('id02').style.display='none'; document.getElementById('id01').style.display='block'">Sign Up</span>
+      <div class="modal-suffix-msg">
+        <b>
+          Not a member?
+          <span id="signup-hyper-link" onclick="document.getElementById('id02').style.display='none'; document.getElementById('id01').style.display='block'">
+            Sign Up
+          </span>
+        </b>
+      </div>
     </div>  
   </form>
 </div>
-<!-- Sign In form Modal End --> 
+<!-- SignIn form Modal End --> 
 
     <div class="container body-container">
         <div class="post-button-div" >     

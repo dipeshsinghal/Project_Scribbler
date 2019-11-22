@@ -89,7 +89,23 @@ label {
     font-size: 16px;
     width: 100%;
     height: 35px;
-  }
+    margin-top: 15px;
+}
+
+.modal-suffix-msg{
+  text-align: center;
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+#signup-hyper-link { 
+  color: blue;
+  cursor: pointer;
+}
+
+#signup-hyper-link:hover {
+  text-decoration:underline;
+}
 
 /* The Close Button (x) */
 .close {
