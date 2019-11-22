@@ -8,13 +8,29 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/postslist.css">
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
 </head>
 
 <body>
     <!-- TODO: Include code for header here -->
+    <div class="container header1-container">      
+            <div class="col-xs-6 header1-logo-col">
+                <div class="row">
+                    <h1 class="header1-text" >ScriBBler</h1>
+                </div>
+                <div class="row">
+                        <div class="header1-subtext">Explore, Imagine, Create</div>
+                </div>
+            </div>
+            <div class="col-xs-6 header1-button-col">
+                <button type="button" class="btn btn-primary button-class header1-button" onclick="signup_modal(true)">Sign Up</button>
+                <button type="button" class="btn btn-primary button-class header1-button" onclick="signin_modal(true)">Sign In</button>
+            </div>
+    </div>
 
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
@@ -132,7 +148,8 @@
 
     </div>
     <!-- list of all posts ends here -->
-    <script src="./scripts/common.js"></script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/postslist.js"></script>
 </body>
 
 </html>
