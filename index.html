@@ -26,10 +26,60 @@
             </div>
         </div>
         <div class="col-xs-6 header1-button-col">
-            <button type="button" class="btn btn-primary button-class header1-button">Sign Up</button>
-            <button type="button" class="btn btn-primary button-class header1-button">Sign In</button>
+            <button type="button" class="btn btn-primary button-class header1-button" onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+            <button type="button" class="btn btn-primary button-class header1-button" onclick="document.getElementById('id02').style.display='block'">Sign In</button>
         </div>
     </div>
+
+<!-- Sign Up form Modal Start -->
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</span>
+      <form class="modal-content" action="">
+        <div class="container">
+          <h1>Get Started</h1>
+          <hr>
+          <label for="name"><b>Name</b></label>
+          <input type="text" placeholder="Enter your name" name="name" required>
+
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter your username" name="username" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter your password" name="psw" required>
+
+          <label for="psw-repeat"><b>Confirm Password</b></label>
+          <input type="password" placeholder="Re-enter your password" name="psw-repeat" required>
+
+          <div class="clearfix">
+            <button type="submit" class="signup">Sign Up</button>
+          </div>
+        </div>  
+      </form>
+    </div>
+<!-- Sign Up form Modal End --> 
+
+<!-- Sign In form Modal Start -->
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">Close</span>
+  <form class="modal-content" action="">
+    <div class="container">
+      <h1>Welcome Back!</h1>
+      <hr>
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter your username" name="username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter your password" name="psw" required>
+
+      <div class="clearfix">
+        <button type="submit" class="signup">Sign In</button>
+      </div>
+      <p>Not a member?<p> <span onclick="document.getElementById('id02').style.display='none'; document.getElementById('id01').style.display='block'">Sign Up</span>
+    </div>  
+  </form>
+</div>
+<!-- Sign In form Modal End --> 
+
     <div class="container body-container">
         <div class="post-button-div" >     
             <button type="button" class="btn btn-primary button-class post-button">All Posts</button>
@@ -39,7 +89,7 @@
     
     <!-- TODO: Include all your code for the header and home page here -->
     <script src="./scripts/common.js"></script>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js"n></script>
 </body>
 
 </html>
