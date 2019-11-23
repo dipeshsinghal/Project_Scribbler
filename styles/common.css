@@ -56,10 +56,3 @@
     margin: 5px;
     border: 2px outset gainsboro ;
 }
-
-body {
-    background-image: url('../images/background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
