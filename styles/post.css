@@ -1,0 +1,32 @@
+.post-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.post-author {
+    font-family: fantasy;
+    font-size: x-large;
+    margin-left: 50px;
+}
+
+.edit {
+    background-color: deeppink;
+    color: white;
+    margin-right: 50px;
+}
+.author-edit-button-area {
+    display: flex;
+    justify-content: space-between;
+}
+.like {
+    background-color: deeppink;
+    color: white;
+    margin-left: 50px;
+}
+
+.post-content {
+    display: flex;
+    text-align: justify;
+    margin: 10px 50px 10px 50px;
+}
