@@ -9,8 +9,8 @@ body {
     border-radius: 20px;
     align-items: center;
     width: 700px;
-    /*border-style: outset;*/
     box-shadow: 5px 5px 5px rgb(185, 183, 183);
+    margin: 15px;
 }
 
 .post-author{
@@ -87,3 +87,7 @@ body {
     margin-left: 40px;
     margin-right: 10px;
   }
+
+  .post-board-class {
+    display: flow-root;
+}

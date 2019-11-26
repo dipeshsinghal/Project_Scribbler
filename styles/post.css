@@ -47,9 +47,11 @@
     height: 70px;
     background-color: white;
     border: 1px solid gray;
+    padding: 0;
     margin: 15px 0 15px 0px;
 }
 .comments-display-area {
+    background-color: white;
     border: 10px solid lightgray;
     margin: 15px 0 15px 0px;
     width: 70%;
@@ -57,5 +59,7 @@
 
 .comment-class {
     background-color: white;
-    margin: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 10px;
+    border-top: 5px solid lightgray;
+    border-bottom: 5px solid lightgray
 }
