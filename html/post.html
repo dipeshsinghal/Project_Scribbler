@@ -32,12 +32,13 @@
             </div>
     </div>
     <div class="post-page">
-        <div class="post-title">Everything you need to know about 'module' & 'require' in Node.js</div>
+        <div id="post-title-id" class="post-title">Everything you need to know about 'module' & 'require' in Node.js</div>
         <div class="author-edit-button-area">
             <div class="post-author">Srishti Gupta</div>
-            <button class="edit-button">Edit <i class="fa fa-edit"></i></button>
+            <button id="edit-button-id" class="save-edit-button" onclick="edit()">Edit <i class="fa fa-edit"></i></button>
+            <button id="save-button-id" class="save-edit-button" onclick="save()">Save <i class="fa fa-save"></i></button>
         </div>
-        <div class="post-content">
+        <div id="post-content-id" class="post-content" >
         Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is 
         named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module named xyz. Let’s take an example to understand this 
         better. You have a file named circle.js which consists of the logic for calculating the area & the circumference of a circle of a given radius. You can call 

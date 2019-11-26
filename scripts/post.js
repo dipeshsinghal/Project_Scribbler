@@ -11,9 +11,34 @@ function like_clicked() {
 
 function comment() {
     var commentText = document.getElementById('comment-area-id').value;
-    console.log(commentText);
     if( commentText !=null && commentText.trim().length != 0 ) {
         document.getElementById('comments-display-area').innerHTML += "<div class='comment-class'>"+commentText+"</div>";
         document.getElementById('comment-area-id').value = "";
     }
+}
+
+function edit() {
+    var title = document.getElementById('post-title-id');
+    var content = document.getElementById('post-content-id');
+
+    title.contentEditable = true;
+    content.contentEditable = true;
+    title.style.border = "2px solid pink";
+    content.style.border = "3px solid pink";
+
+    document.getElementById('edit-button-id').style.display = 'none';
+    document.getElementById('save-button-id').style.display = 'block';
+}
+
+function save() {
+    var title = document.getElementById('post-title-id');
+    var content = document.getElementById('post-content-id');
+
+    title.contentEditable = false;
+    content.contentEditable = false;
+    title.style.border = 'none';
+    content.style.border = 'none';
+
+    document.getElementById('edit-button-id').style.display = 'block';
+    document.getElementById('save-button-id').style.display = 'none';
 }

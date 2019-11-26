@@ -13,7 +13,7 @@
     font-size: x-large;
 }
 
-.edit-button {
+.save-edit-button {
     background-color: deeppink;
     color: white;
     margin: 15px 0 15px 0px;
@@ -62,4 +62,8 @@
     padding: 10px 10px 10px 10px;
     border-top: 5px solid lightgray;
     border-bottom: 5px solid lightgray
+}
+
+#save-button-id {
+    display: none;
 }
