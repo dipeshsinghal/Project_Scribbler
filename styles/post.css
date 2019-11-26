@@ -1,3 +1,7 @@
+.post-page {
+    margin-left: 50px;
+    margin-right: 50px;
+}
 .post-title {
     text-align: center;
     font-weight: bold;
@@ -7,26 +11,45 @@
 .post-author {
     font-family: fantasy;
     font-size: x-large;
-    margin-left: 50px;
 }
 
-.edit {
+.edit-button {
     background-color: deeppink;
     color: white;
-    margin-right: 50px;
+    margin: 15px 0 15px 0px;
+    padding: 5px 15px 5px 15px;
 }
 .author-edit-button-area {
     display: flex;
     justify-content: space-between;
+    margin: 15px 0 15px 0px;
 }
-.like {
+.like-comment-button {
     background-color: deeppink;
     color: white;
-    margin-left: 50px;
+    margin: 0px 0 15px 0px;
+    padding: 5px 15px 5px 15px;
 }
 
 .post-content {
     display: flex;
     text-align: justify;
-    margin: 10px 50px 10px 50px;
+    margin: 15px 0 15px 0px;
+}
+
+.like-summary {
+    color: gray;
+}
+
+.comment-area {
+    display: block;
+    width: 70%;
+    height: 70px;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 15px 0 15px 0px;
+}
+.comments-display-area {
+    border: 10px solid lightgray;
+    margin: 15px 0 15px 0px;
 }
