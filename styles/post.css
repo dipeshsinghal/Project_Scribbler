@@ -40,7 +40,7 @@
 .like-summary {
     color: gray;
 }
-
+   
 .comment-area {
     display: block;
     width: 70%;
@@ -52,4 +52,10 @@
 .comments-display-area {
     border: 10px solid lightgray;
     margin: 15px 0 15px 0px;
+    width: 70%;
+}
+
+.comment-class {
+    background-color: white;
+    margin: 5px 5px 5px 5px;
 }
