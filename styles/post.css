@@ -14,7 +14,7 @@
 }
 
 .save-edit-button {
-    background-color: deeppink;
+    background-color: red;
     color: white;
     margin: 15px 0 15px 0px;
     padding: 5px 15px 5px 15px;
@@ -25,7 +25,7 @@
     margin: 15px 0 15px 0px;
 }
 .like-comment-button {
-    background-color: deeppink;
+    background-color: red;
     color: white;
     margin: 0px 0 15px 0px;
     padding: 5px 15px 5px 15px;

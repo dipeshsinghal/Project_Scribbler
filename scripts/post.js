@@ -1,5 +1,8 @@
+var count = 0;
+
 function like_clicked() {
-    document.getElementById('like-summary-id').innerHTML = "1 person likes this!";
+    count++;
+    document.getElementById('like-summary-id').innerHTML = String(count) + " person likes this!";
 
     var text = document.getElementById('like-button').innerHTML;
     if( text.endsWith("e") ) {
