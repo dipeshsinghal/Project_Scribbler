@@ -3,7 +3,9 @@ html, body {
   width: 100%;
 }
 
-.header1-container {
+/***** header style start *****/
+
+.header-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,59 +13,34 @@ html, body {
     max-width: 100%;
 }
 
-.header1-logo-col{
+.header-logo-col{
     align-items: left;
 }
 
-.header1-button-col{
+.header-button-col{
     align-items: right;
 }
 
-.header1-text {
+.header-text {
     font-family: 'Montez', cursive;
     color: blue;
 }
 
-.header1-subtext {
+.header-subtext {
     font-family: 'Ubuntu Mono', monospace;
     color: black;
 }
 
-.header1-button {   
+.header-button {   
     text-align: center;
     background-color: blue;
     margin: 5px;
     border: 2px outset gainsboro ;
 }
 
-.body-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 5px;
-    max-width: 100%;
-    max-height: 100%;
-}
+/***** header style end *****/
 
-.post-button-div {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.post-button {
-    text-align: center;
-    color: black;
-    background-color: rgb(207, 179, 53);
-    margin: 5px;
-    border: 2px outset gainsboro ;
-}
-
-/* Modal Box Releated css */
+/***** All Modal Box common style start *****/
 
 * {box-sizing: border-box}
 /* Full-width input fields */
@@ -88,13 +65,12 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {
   background-color: #ddd;
   outline: auto blue    ;
 }
+
 textarea{
   height: 251px;
 }
 
-
-/* Add padding to container elements */
-.container {
+.modal-container {
   padding: 16px;
   text-align: left;
 }
@@ -113,17 +89,13 @@ textarea{
     background-color: #000000bf;
 }
 
-/* Modal Content/Box */
+/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 25%; /* Could be more or less, depending on screen size */
   height: auto;
-}
-
-#post-modal-content {
-  width: 70%; /* Could be more or less, depending on screen size */
 }
 
 /* Style the horizontal ruler */
@@ -145,13 +117,40 @@ textarea{
     font-size: 25px;
     margin-bottom: 15px;
 }
-    
 
 label {    
     display: inline-block;
     margin-bottom: 5px;
     margin-top: 10px;
+    text-align: left;
 }
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/***** All Modal Box common style end *****/
+
+/***** Sign-in Modal Box style start *****/
 
 .class-signin-btn {
     background-color: #4CAF50; /* Green */
@@ -166,6 +165,15 @@ label {
     height: 35px;
     margin-top: 15px;
 }
+
+#signin-modal-content {
+  min-width: 400px;
+  min-height: 350px;
+}
+
+/***** Sign-in Modal Box style end *****/
+
+/***** Sign-up Modal Box style start *****/
 
 .class-create-btn {
   background-color: #4CAF50; /* Green */
@@ -200,29 +208,9 @@ label {
   text-decoration:underline;
 }
 
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
+#signup-modal-content {
+  min-width: 400px;
+  min-height: 500px;
 }
 
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-label {
-  text-align: left;
-}
+/***** Sign-up Modal Box style end *****/

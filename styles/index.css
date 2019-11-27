@@ -6,7 +6,14 @@ body {
   text-align: center;
 }
 
-
+.body-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+  max-width: 100%;
+  max-height: 100%;
+}
 
 .post-buttons-div {
   display: inline-block;
@@ -17,3 +24,21 @@ body {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
+.post-button {
+  text-align: center;
+  color: black;
+  background-color: rgb(207, 179, 53);
+  margin: 5px;
+  border: 2px outset gainsboro ;
+}
+
+/*** Create Post Modal Box Style start ***/
+
+#post-modal-content {
+  width: 70%;
+  min-width: 400px;
+  min-height: 200px;
+}
+
+/*** Create Post Modal Box Style end ***/

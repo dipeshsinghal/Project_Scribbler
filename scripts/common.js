@@ -1,20 +1,20 @@
 var header = 
-"<div class='col-xs-6 header1-logo-col'> \
+"<div class='col-xs-6 header-logo-col'> \
     <div class='row'> \
-        <h1 class='header1-text' >ScriBBler</h1> \
+        <h1 class='header-text' >ScriBBler</h1> \
     </div> \
     <div class='row'> \
-        <div class='header1-subtext'>Explore, Imagine, Create</div> \
+        <div class='header-subtext'>Explore, Imagine, Create</div> \
     </div> \
 </div> \
-<div class='col-xs-6 header1-button-col'> \
-    <button type='button' class='btn btn-primary button-class header1-button' onclick=\"modal_dialog('id-modal-signup','block')\">Sign Up</button> \
-    <button type='button' class='btn btn-primary button-class header1-button' onclick=\"modal_dialog('id-modal-signin','block')\">Sign In</button> \
+<div class='col-xs-6 header-button-col'> \
+    <button type='button' class='btn btn-primary button-class header-button' onclick=\"modal_dialog('id-modal-signup','block')\">Sign Up</button> \
+    <button type='button' class='btn btn-primary button-class header-button' onclick=\"modal_dialog('id-modal-signin','block')\">Sign In</button> \
 </div>"
 
 var signup_modal = 
-"<form class='modal-content' action=''> \
-    <div class='container'> \
+"<form id='signup-modal-content' class='modal-content' action=''> \
+    <div class='modal-container'> \
         <div class='modal-title'>Get Started</div> \
         <span onclick=\"modal_dialog('id-modal-signup','none')\" class='close' ><i class='fa fa-times modal-close' aria-hidden='true'></i></span> \
         <hr class='hr-class'> \
@@ -33,8 +33,8 @@ var signup_modal =
 </form>" 
 
 var signin_modal = 
-"<form class='modal-content' action=''> \
-    <div class='container'> \
+"<form id='signin-modal-content' class='modal-content' action=''> \
+    <div class='modal-container'> \
         <div class='modal-title'>Welcome Back!</div> \
         <span onclick=\"modal_dialog('id-modal-signin','none')\" class='close' ><i class='fa fa-times modal-close' aria-hidden='true'></i></span> \
         <hr class='hr-class'> \
@@ -58,7 +58,7 @@ var signin_modal =
 
 var create_post_modal = 
 "<form id='post-modal-content' class='modal-content' action=''> \
-    <div class='container'> \
+    <div class='modal-container'> \
         <div class='modal-title'>Pen Your Post</div> \
         <span onclick=\"modal_dialog('id-modal-create-post', 'none')\" class='close' ><i class='fa fa-times modal-close' aria-hidden='true'></i></span> \
         <hr class='hr-class'> \

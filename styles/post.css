@@ -2,6 +2,7 @@
     margin-left: 50px;
     margin-right: 50px;
 }
+
 .post-title {
     text-align: center;
     font-weight: bold;
@@ -19,11 +20,13 @@
     margin: 15px 0 15px 0px;
     padding: 5px 15px 5px 15px;
 }
+
 .author-edit-button-area {
     display: flex;
     justify-content: space-between;
     margin: 15px 0 15px 0px;
 }
+
 .like-comment-button {
     background-color: red;
     color: white;
