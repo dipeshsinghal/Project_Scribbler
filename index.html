@@ -24,6 +24,7 @@
 
   <body onload="insert_common_object()">
 
+    <!-- code for modal and header are added dynamically from java script in below wrapper div -->
     <!-- header start -->
     <div id="id-header-space" class='container header1-container'></div>
     <!-- header end -->
@@ -41,12 +42,10 @@
     <!-- Create Post form Modal End --> 
 
     <!-- home page content -->
-    <div class="container body-container">
-      <div class="post-button-div" >     
-          <button type="button" class="btn btn-primary button-class post-button" onclick="window.location.href='html/postslist.html'">All Posts</button>
-          <button type="button" class="btn btn-primary button-class post-button" onclick="modal_dialog('id-modal-create-post','block')">Create Post</button>
-      </div>
-    </div> 
+    <div class="post-buttons-div" >     
+        <button type="button" class="btn btn-primary button-class post-button" onclick="window.location.href='html/postslist.html'">All Posts</button>
+        <button type="button" class="btn btn-primary button-class post-button" onclick="modal_dialog('id-modal-create-post','block')">Create Post</button>
+    </div>
     
     <!-- all project javascript files -->
     <script src="./scripts/common.js"></script>

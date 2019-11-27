@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 .header1-container {
     display: flex;
     flex-direction: row;
@@ -41,12 +46,13 @@
 }
 
 .post-button-div {
-    margin: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 18%;
-    margin-bottom: auto;
-    display:block;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .post-button {
@@ -90,6 +96,7 @@ textarea{
 /* Add padding to container elements */
 .container {
   padding: 16px;
+  text-align: left;
 }
 
 /* The Modal (background) */
@@ -214,4 +221,8 @@ label {
   content: "";
   clear: both;
   display: table;
+}
+
+label {
+  text-align: left;
 }
