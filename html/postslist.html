@@ -5,32 +5,40 @@
     <meta charset="utf-8" />
     <title>ScriBBler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    
+    <!-- local stylesheets -->
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/postslist.css">
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+
 </head>
 
-<body>
-    <!-- TODO: Include code for header here -->
-    <div class="container header1-container">      
-            <div class="col-xs-6 header1-logo-col">
-                <div class="row">
-                    <h1 class="header1-text" >ScriBBler</h1>
-                </div>
-                <div class="row">
-                        <div class="header1-subtext">Explore, Imagine, Create</div>
-                </div>
-            </div>
-            <div class="col-xs-6 header1-button-col">
-                <button type="button" class="btn btn-primary button-class header1-button" onclick="signup_modal(true, this)">Sign Up</button>
-                <button type="button" class="btn btn-primary button-class header1-button" onclick="signin_modal(true, this)">Sign In</button>
-            </div>
-    </div>
+<body onload="insert_common_object()">
+
+    <!-- header start -->
+    <div id="id-header-space" class='container header1-container'></div>
+    <!-- header end -->
+    
+    <!-- SignUp form Modal Start -->
+    <div id="id-modal-signup" class="modal"></div>
+    <!-- SignUp form Modal End --> 
+
+    <!-- SignIn form Modal Start -->
+    <div id="id-modal-signin" class="modal"></div>
+    <!-- SignIn form Modal End --> 
+
+    <!-- Create Post form Modal Start -->
+    <div id="id-modal-create-post" class="modal"></div>
+    <!-- Create Post form Modal End --> 
 
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
     <!-- list of all posts starts here -->
@@ -57,107 +65,108 @@
             </div>
         </div>
         <!-- post 1 ends here -->
-  <!-- post 2 starts here -->
-  <div id="post2" class="card-class">
-        <div class="col-md post-author">
-            <p>Colby Fayock</p>
-        </div>
-        <div class="col post-content">
-            <div class="post-title-header">
-                <p class="post-title">What is linting and how can it save you time?</p>
-                <span>
-                    <!-- Include Font Awesome icon for delete icon here -->
-                    <i class="fa fa-trash card-delete" aria-hidden="true" onclick="confirm_modal(true, 'post2')"></i>
-                </span>
-            </div>
-            <p class="post-content-p">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
-            <div class="card-ellipsis">
-                <!-- Include Font Awesome icon for horizontal ellipsis icon here -->
-                <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="window.location.href='post.html'"></i>
-            </div>
-        </div>
-    </div>
-    <!-- post 2 ends here -->
 
-    <!-- post 3 starts here -->
-    <div id="post3" class="card-class">
-        <div class="col-md post-author">
-            <p>Yazeed Bzadough</p>
-        </div>
-        <div class="col post-content">
-            <div class="post-title-header">
-                <p class="post-title">How to Get More Views on Your Tech Blog</p>
-                <span>
-                    <!-- Include Font Awesome icon for delete icon here -->
-                    <i class="fa fa-trash card-delete" aria-hidden="true" onclick="confirm_modal(true, 'post3')"></i>
-                </span>
+        <!-- post 2 starts here -->
+        <div id="post2" class="card-class">
+            <div class="col-md post-author">
+                <p>Colby Fayock</p>
             </div>
-            <p class="post-content-p">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
-            <div class="card-ellipsis">
-                <!-- Include Font Awesome icon for horizontal ellipsis icon here -->
-                <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="window.location.href='post.html'"></i>
+            <div class="col post-content">
+                <div class="post-title-header">
+                    <p class="post-title">What is linting and how can it save you time?</p>
+                    <span>
+                        <!-- Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash card-delete" aria-hidden="true" onclick="confirm_modal(true, 'post2')"></i>
+                    </span>
+                </div>
+                <p class="post-content-p">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
+                <div class="card-ellipsis">
+                    <!-- Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="window.location.href='post.html'"></i>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- post 3 ends here -->
+        <!-- post 2 ends here -->
 
-    <!-- post 4 starts here -->
-    <div id="post4" class="card-class">
-        <div class="col-md post-author">
-            <p>Cedd Burge</p>
-        </div>
-        <div class="col post-content">
-            <div class="post-title-header">
-                <p class="post-title">How to write easily describable code</p>
-                <span>
-                    <!-- Include Font Awesome icon for delete icon here -->
-                    <i class="fa fa-trash card-delete" aria-hidden="true" onclick="confirm_modal(true, 'post4')"></i>
-                </span>
+        <!-- post 3 starts here -->
+        <div id="post3" class="card-class">
+            <div class="col-md post-author">
+                <p>Yazeed Bzadough</p>
             </div>
-            <p class="post-content-p">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
-                    leads to confusion when discussing the code.</p>
-            <div class="card-ellipsis">
-                <!-- Include Font Awesome icon for horizontal ellipsis icon here -->
-                <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="window.location.href='post.html'"></i>
+            <div class="col post-content">
+                <div class="post-title-header">
+                    <p class="post-title">How to Get More Views on Your Tech Blog</p>
+                    <span>
+                        <!-- Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash card-delete" aria-hidden="true" onclick="confirm_modal(true, 'post3')"></i>
+                    </span>
+                </div>
+                <p class="post-content-p">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+                <div class="card-ellipsis">
+                    <!-- Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="window.location.href='post.html'"></i>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- post 4 ends here -->
+        <!-- post 3 ends here -->
 
-    <!-- post 5 starts here -->
-    <div id="post5" class="card-class">
-        <div class="col-md post-author">
-            <p>Srishti Gupta</p>
-        </div>
-        <div class="col post-content">
-            <div class="post-title-header">
-                <p class="post-title">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
-                <span>
-                    <!-- Include Font Awesome icon for delete icon here -->
-                    <i class="fa fa-trash card-delete" aria-hidden="true" onclick="confirm_modal(true, 'post5')"></i>
-                </span>
+        <!-- post 4 starts here -->
+        <div id="post4" class="card-class">
+            <div class="col-md post-author">
+                <p>Cedd Burge</p>
             </div>
-            <p class="post-content-p">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
-                    named xyz.</p>
-            <div class="card-ellipsis">
-                <!-- Include Font Awesome icon for horizontal ellipsis icon here -->
-                <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="window.location.href='post.html'"></i>
+            <div class="col post-content">
+                <div class="post-title-header">
+                    <p class="post-title">How to write easily describable code</p>
+                    <span>
+                        <!-- Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash card-delete" aria-hidden="true" onclick="confirm_modal(true, 'post4')"></i>
+                    </span>
+                </div>
+                <p class="post-content-p">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+                        leads to confusion when discussing the code.</p>
+                <div class="card-ellipsis">
+                    <!-- Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="window.location.href='post.html'"></i>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- post 5 ends here -->
+        <!-- post 4 ends here -->
+
+        <!-- post 5 starts here -->
+        <div id="post5" class="card-class">
+            <div class="col-md post-author">
+                <p>Srishti Gupta</p>
+            </div>
+            <div class="col post-content">
+                <div class="post-title-header">
+                    <p class="post-title">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                    <span>
+                        <!-- Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash card-delete" aria-hidden="true" onclick="confirm_modal(true, 'post5')"></i>
+                    </span>
+                </div>
+                <p class="post-content-p">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                        named xyz.</p>
+                <div class="card-ellipsis">
+                    <!-- Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa fa-ellipsis-h" aria-hidden="true" onclick="window.location.href='post.html'"></i>
+                </div>
+            </div>
+        </div>
+        <!-- post 5 ends here -->
       
 
-    <!-- : Write code for delete post modal here -->
-    <div id="id04" class="modal">
-        <form class="modal-content confirm-dialog" action="">
-            <div >Are you sure you want to delete this post?</div>   
-            <div class="dialog-button-area"> 
-                <button id="id_yes_btn" type="button" class="class-yes-btn" onclick="delete_post();confirm_modal(false, null)">Yes</button>
-                <button id="id_no_btn" type="button" class="class-no-btn" onclick="confirm_modal(false, null)">No</button>
-            </div>
-        </form>
-    </div>
+        <!-- : Write code for delete post modal here -->
+        <div id="id04" class="modal">
+            <form class="modal-content confirm-dialog" action="">
+                <div >Are you sure you want to delete this post?</div>   
+                <div class="dialog-button-area"> 
+                    <button id="id_yes_btn" type="button" class="class-yes-btn" onclick="delete_post();confirm_modal(false, null)">Yes</button>
+                    <button id="id_no_btn" type="button" class="class-no-btn" onclick="confirm_modal(false, null)">No</button>
+                </div>
+            </form>
+        </div>
 
     </div>
     <!-- list of all posts ends here -->

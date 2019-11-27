@@ -1,125 +1,56 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>ScriBBler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    
+    <!-- local stylesheets -->
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
 
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
-</head>
+  </head>
 
-<body>
-    <div class="container header1-container">      
-        <div class="col-xs-6 header1-logo-col">
-            <div class="row">
-                <h1 class="header1-text" >ScriBBler</h1>
-            </div>
-            <div class="row">
-                    <div class="header1-subtext">Explore, Imagine, Create</div>
-            </div>
-        </div>
-        <div class="col-xs-6 header1-button-col">
-            <button type="button" class="btn btn-primary button-class header1-button" onclick="signup_modal(true)">Sign Up</button>
-            <button type="button" class="btn btn-primary button-class header1-button" onclick="signin_modal(true)">Sign In</button>
-        </div>
-    </div>
+  <body onload="insert_common_object()">
 
-<!-- SignUp form Modal Start -->
-    <div id="id01" class="modal">
-      <form class="modal-content" action="">
-        <div class="container">
-          <div class="modal-title">Get Started</div>
-          <span onclick="signup_modal(false)" class="close" ><i class="fa fa-times modal-close" aria-hidden="true"></i></span>
-          <hr class="hr-class">
-          <label for="name">Name</label>
-          <input id="name" type="text" placeholder="Enter your name" name="name" required >
+    <!-- header start -->
+    <div id="id-header-space" class='container header1-container'></div>
+    <!-- header end -->
+    
+    <!-- SignUp form Modal Start -->
+    <div id="id-modal-signup" class="modal"></div>
+    <!-- SignUp form Modal End --> 
 
-          <label for="username">Username</label>
-          <input type="text" placeholder="Enter your username" name="username" required>
+    <!-- SignIn form Modal Start -->
+    <div id="id-modal-signin" class="modal"></div>
+    <!-- SignIn form Modal End --> 
 
-          <label for="password">Password</label>
-          <input type="password" placeholder="Enter your password" name="password" required>
+    <!-- Create Post form Modal Start -->
+    <div id="id-modal-create-post" class="modal"></div>
+    <!-- Create Post form Modal End --> 
 
-          <label for="password-repeat">Confirm Password</label>
-          <input type="password" placeholder="Re-enter your password" name="password-repeat" required>
-
-          <div class="clearfix">
-            <button id="id_signup_btn" type="submit" class="class-signin-btn">Sign Up</button>
-          </div>
-        </div>  
-      </form> 
-    </div>
-<!-- SignUp form Modal End --> 
-
-<!-- SignIn form Modal Start -->
-<div id="id02" class="modal">
-  <form class="modal-content" action="">
-    <div class="container">
-      <div class="modal-title">Welcome Back!</div>
-      <span onclick="signin_modal(false)" class="close" ><i class="fa fa-times modal-close" aria-hidden="true"></i></span>
-      <hr class="hr-class">
-      <label for="username">Username</label>
-      <input type="text" placeholder="Enter your username" name="username" required>
-
-      <label for="password">Password</label>
-      <input type="password" placeholder="Enter your password" name="password" required>
-
-      <div class="clearfix">
-        <button id="id_signin_btn" type="submit" class="class-signin-btn">Sign In</button>
-      </div>
-      <div class="modal-suffix-msg">
-        <b>
-          Not a member?
-          <span id="signup-hyper-link" onclick="signin_modal(false);signup_modal(true)">
-            Sign Up
-          </span>
-        </b>
-      </div>
-    </div>  
-  </form>
-</div>
-<!-- SignIn form Modal End --> 
-
-<!-- Create Post form Modal Start -->
-<div id="id03" class="modal">
-    <form id="post-modal-content" class="modal-content" action="">
-      <div class="container">
-        <div class="modal-title">Pen Your Post</div>
-        <span onclick="post_modal(false)" class="close" ><i class="fa fa-times modal-close" aria-hidden="true"></i></span>
-        <hr class="hr-class">
-        <label for="title">Title</label>
-        <input type="text" placeholder="Enter title of your post" name="title" required>
-  
-        <label for="contents">Contents</label>
-        <textarea rows="10" cols="50" placeholder="Enter the contents of your post" name="contents" required>
-        </textarea>
-  
-        <div class="create-btn-div">
-          <button id="id_create_btn" type="submit" class="class-create-btn">Create</button>
-        </div>
-      </div>  
-    </form>
-  </div>
-  <!-- Create Post form Modal End --> 
-
+    <!-- home page content -->
     <div class="container body-container">
-        <div class="post-button-div" >     
-            <button type="button" class="btn btn-primary button-class post-button" onclick="window.location.href='html/postslist.html'">All Posts</button>
-            <button type="button" class="btn btn-primary button-class post-button" onclick="post_modal(true)">Create Post</button>
-        </div>
+      <div class="post-button-div" >     
+          <button type="button" class="btn btn-primary button-class post-button" onclick="window.location.href='html/postslist.html'">All Posts</button>
+          <button type="button" class="btn btn-primary button-class post-button" onclick="modal_dialog('id-modal-create-post','block')">Create Post</button>
+      </div>
     </div> 
     
-    <!-- TODO: Include all your code for the header and home page here -->
+    <!-- all project javascript files -->
     <script src="./scripts/common.js"></script>
     <script src="./scripts/index.js"n></script>
-</body>
+  </body>
 
 </html>

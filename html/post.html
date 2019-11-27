@@ -15,22 +15,24 @@
     <!-- TODO: Include Google Fonts file here -->
 </head>
 
-<body>
-    <!-- TODO: Include code for header here -->
-    <div class="container header1-container">      
-            <div class="col-xs-6 header1-logo-col">
-                <div class="row">
-                    <h1 class="header1-text" >ScriBBler</h1>
-                </div>
-                <div class="row">
-                        <div class="header1-subtext">Explore, Imagine, Create</div>
-                </div>
-            </div>
-            <div class="col-xs-6 header1-button-col">
-                <button type="button" class="btn btn-primary button-class header1-button" onclick="signup_modal(true)">Sign Up</button>
-                <button type="button" class="btn btn-primary button-class header1-button" onclick="signin_modal(true)">Sign In</button>
-            </div>
-    </div>
+<body onload="insert_common_object()">
+
+    <!-- header start -->
+    <div id="id-header-space" class='container header1-container'></div>
+    <!-- header end -->
+    
+    <!-- SignUp form Modal Start -->
+    <div id="id-modal-signup" class="modal"></div>
+    <!-- SignUp form Modal End --> 
+
+    <!-- SignIn form Modal Start -->
+    <div id="id-modal-signin" class="modal"></div>
+    <!-- SignIn form Modal End --> 
+
+    <!-- Create Post form Modal Start -->
+    <div id="id-modal-create-post" class="modal"></div>
+    <!-- Create Post form Modal End --> 
+
     <div class="post-page">
         <div id="post-title-id" class="post-title">Everything you need to know about 'module' & 'require' in Node.js</div>
         <div class="author-edit-button-area">
