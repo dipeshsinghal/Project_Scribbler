@@ -52,7 +52,7 @@ body {
     color: gray;
     font-weight: 500;
     white-space: nowrap;
-    width: 95%;
+    width: 100%;
 }
 .card-ellipsis {
     text-align: end;
