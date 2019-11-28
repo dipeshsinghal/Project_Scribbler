@@ -1,3 +1,5 @@
+/* header html code as java script */
+
 var header = 
 "<div class='col-xs-6 header-logo-col'> \
     <div class='row'> \
@@ -11,6 +13,8 @@ var header =
     <button type='button' class='btn btn-primary button-class header-button' onclick=\"modal_dialog('id-modal-signup','block')\">Sign Up</button> \
     <button type='button' class='btn btn-primary button-class header-button' onclick=\"modal_dialog('id-modal-signin','block')\">Sign In</button> \
 </div>"
+
+/* signup modal html code as java script */
 
 var signup_modal = 
 "<form id='signup-modal-content' class='modal-content' action=''> \
@@ -31,6 +35,8 @@ var signup_modal =
         </div> \
     </div> \
 </form>" 
+
+/* signin modal html code as java script */
 
 var signin_modal = 
 "<form id='signin-modal-content' class='modal-content' action=''> \
@@ -56,6 +62,8 @@ var signin_modal =
     </div> \
 </form>"
 
+/* create post modal html code as java script */
+
 var create_post_modal = 
 "<form id='post-modal-content' class='modal-content' action=''> \
     <div class='modal-container'> \
@@ -73,21 +81,26 @@ var create_post_modal =
     </div> \
 </form>"
 
+/* call this function on load of each page to insert common node like header and modals at run time */
+
 function insert_common_object(){
     insert_header();
     insert_modal();
 }
 
+/* insert header dynamically through js */
 function insert_header() {
     document.getElementById('id-header-space').innerHTML = header;
 }
 
+/* insert all the modal dynamically through js */
 function insert_modal() {
     document.getElementById('id-modal-signup').innerHTML = signup_modal;
     document.getElementById('id-modal-signin').innerHTML = signin_modal;
     document.getElementById('id-modal-create-post').innerHTML = create_post_modal;
 }
 
+/* function to show/hide modal using its id */
 function modal_dialog(id, display) {
     document.getElementById(id).style.display= display;  
  }
