@@ -16,7 +16,9 @@ function like_clicked() {
 function comment() {
     var commentText = document.getElementById('comment-area-id').value;
     if( commentText !=null && commentText.trim().length != 0 ) {
-        document.getElementById('comments-display-area').innerHTML += "<div class='comment-class'>"+commentText+"</div>";
+        //adding commeent in latest on top order
+        document.getElementById('comments-display-area').innerHTML = "<div class='comment-class'>"+commentText+"</div>" 
+                                                                     + document.getElementById('comments-display-area').innerHTML;
         document.getElementById('comment-area-id').value = "";
     }
 }
